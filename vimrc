@@ -114,7 +114,7 @@ au BufNewFile,BufRead *.py
 vnoremap <leader>s :sort<CR>
 
 "remove trailing white space
-nnoremap <leader>ws :%s/\s\+$//e
+nnoremap <leader>ws :%s/\s\+$//e<CR>
 
 "make it so :Q works as :q and :W works as :w
 :command W w
@@ -172,5 +172,5 @@ augroup numbertoggle
 augroup END
 
 "Show tab/newline/carridge return characters
-set listchars=eol:¬
+set listchars=eol:¬,tab:⇥\ 
 set list
